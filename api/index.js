@@ -6,7 +6,7 @@ app.get('/api', (req, res) => {
 });
 
 app.get('/api/gameDay', (req, res) => {
-  res.send(data);
+  res.json(data);
 });
 
 module.exports = app;
