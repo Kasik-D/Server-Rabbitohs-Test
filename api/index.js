@@ -2,7 +2,7 @@ const app = require('express')();
 const data = require('./data.json');
 
 app.get('/api', (req, res) => {
-  res.end('API: root');
+  res.send('Hey this is my API running 🥳')
 });
 
 app.get('/api/gameDay', (req, res) => {
