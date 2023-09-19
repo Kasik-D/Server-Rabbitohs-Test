@@ -15,7 +15,6 @@
                     "teamName": "South Sydney Rabbitohs",
                     "teamNickName": "Rabbitohs",
                     "teamAbbr": "SOU",
-
                     "teamPosition": 8,
                     "teamHeadToHeadOdds": "1.45",
                     "teamHeadToHeadOddsStatus": "A",
@@ -33,7 +32,6 @@
                     "teamAbbr": "NQL",
                     "teamPosition": 13,
                     "teamHeadToHeadOdds": "2.75",
-
                     "teamHeadToHeadOddsStatus": "A",
                     "teamHeadToHeadOddsOutcomeID": 882605830,
                     "teamLineOdds": 1.9,
