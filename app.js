@@ -1,33 +1,12 @@
-const express = require('express');
-const cors = require('cors');
-// const jsonServer = require('json-server');
-const data = require('./db.json');  // Load the data
+const app = require('express')();
+const data = require('./data.json');
 
-// Create an Express app
-const app = express();
-const port = 3001; // You can choose any port you prefer
-
-// Enable CORS
-app.use(cors({
-    origin: '*',
-}));
-
-// JSON Server
-// const jsonServerRouter = jsonServer.router('db.json');
-// app.use('/api', jsonServerRouter);
-
-// Start the server
-const server = app.listen(port, () => {
-  console.log(`Server is running on http://localhost:${port}`);
+app.get('/api', (req, res) => {
+  res.end('API: root');
 });
 
-app.get('/', (req, res) => {
-  res.send('Hey this is my API running 🥳')
-})
-
 app.get('/api/gameDay', (req, res) => {
-  res.send(data)
-})
+  res.end(data);
+});
 
-// Export the Express API
-module.exports = app
+module.exports = app;
