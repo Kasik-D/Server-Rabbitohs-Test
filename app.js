@@ -21,6 +21,9 @@ const server = app.listen(port, () => {
   console.log(`Server is running on http://localhost:${port}`);
 });
 
+app.get('/', (req, res) => {
+  res.send('Hey this is my API running 🥳')
+})
 
 app.get('/api/gameDay', (req, res) => {
   res.send(data)
