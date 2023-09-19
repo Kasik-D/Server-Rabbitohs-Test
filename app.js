@@ -1,6 +1,7 @@
 const express = require('express');
 const cors = require('cors');
-const jsonServer = require('json-server');
+// const jsonServer = require('json-server');
+const data = require('./db.json');  // Load the data
 
 // Create an Express app
 const app = express();
@@ -12,10 +13,18 @@ app.use(cors({
 }));
 
 // JSON Server
-const jsonServerRouter = jsonServer.router('db.json');
-app.use('/api', jsonServerRouter);
+// const jsonServerRouter = jsonServer.router('db.json');
+// app.use('/api', jsonServerRouter);
 
 // Start the server
 const server = app.listen(port, () => {
   console.log(`Server is running on http://localhost:${port}`);
 });
+
+
+app.get('/api/gameDay', (req, res) => {
+  res.send(data)
+})
+
+// Export the Express API
+module.exports = app
