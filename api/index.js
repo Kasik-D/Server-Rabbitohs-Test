@@ -6,7 +6,7 @@ app.get('/api', (req, res) => {
 });
 
 app.get('/api/gameDay', (req, res) => {
-  res.json(data);
+  res.send('Hey this is my API running 🥳')
 });
 
 module.exports = app;
