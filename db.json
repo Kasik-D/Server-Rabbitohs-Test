@@ -1,5 +1,4 @@
 {
-    "gameDay": {
     "showGameDay": true,
     "success": "1",
     "game": {
@@ -16677,6 +16676,5 @@
         },
         "gameImageBanner": "https://www.rabbitohs.com.au/img/builderDefault/1920x500stadium.jpg",
         "leagueLogo": "https://rugbyimages.statsperform.com/Team%20Logos/111/ZBPN4vgQ-1.png"
-    }
     }
 }
